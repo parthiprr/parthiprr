@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { Hero } from './sections/Hero';
@@ -229,6 +230,7 @@ function App() {
           </motion.div>
         )}
       </AnimatePresence>
+      <Analytics />
     </>
   );
 }
