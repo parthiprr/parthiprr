@@ -80,6 +80,10 @@ const projects = [
     imageAlt: 'First page of the research publication on UML Activity Diagram generation and evaluation framework',
     pdf: '/publication/144.pdf',
     certificate: '/publication/144-4.pdf',
+    ieeeUrl: 'https://ieeexplore.ieee.org/document/11559382',
+    doi: '10.1109/ICSSAS68835.2026.11559382',
+    venue: '2026 4th International Conference on Self Sustainable Artificial Intelligence Systems (ICSSAS), Erode, India',
+    pages: 'pp. 1768–1775',
     type: 'publication',
   },
 ];
@@ -253,19 +257,47 @@ export const Projects: React.FC = () => {
                     })}
                   </div>
 
-                  <p className="text-brand-text-muted text-center text-sm leading-relaxed max-w-2xl mx-auto font-sans px-4 mb-6">
+                  <p className="text-brand-text-muted text-center text-sm leading-relaxed max-w-2xl mx-auto font-sans px-4 mb-4">
                     {project.description}
                   </p>
 
+                  {/* Conference metadata */}
+                  {(project.venue || project.doi) && (
+                    <div className="flex flex-col items-center gap-1 mb-6 px-4">
+                      {project.venue && (
+                        <p className="text-center text-xs text-brand-text-muted/80 font-sans italic max-w-xl">
+                          {project.venue}{project.pages ? `, ${project.pages}` : ''}
+                        </p>
+                      )}
+                      {project.doi && (
+                        <p className="text-center text-[11px] text-brand-text-muted/60 font-mono">
+                          DOI: {project.doi}
+                        </p>
+                      )}
+                    </div>
+                  )}
+
                   <div className="flex flex-wrap justify-center gap-4 sm:gap-6 font-display w-full px-4">
+                    {project.ieeeUrl && (
+                      <a
+                        href={project.ieeeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-2.5 bg-[#006699] hover:bg-[#005580] text-white text-xs font-bold tracking-wider uppercase rounded-xl transition-all shadow-sm hover:shadow-md hover:shadow-[#006699]/20 cursor-pointer flex items-center space-x-1.5"
+                      >
+                        <IEEEIcon className="h-3 w-auto text-white" />
+                        <span>IEEE Xplore</span>
+                      </a>
+                    )}
+
                     <a
                       href={project.pdf}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-6 py-2.5 bg-brand-accent-gold hover:bg-brand-accent-gold-dark text-white text-xs font-bold tracking-wider uppercase rounded-xl transition-all shadow-sm hover:shadow-md hover:shadow-brand-accent-gold/15 cursor-pointer flex items-center space-x-1.5"
                     >
-                      <IEEEIcon className="h-3 w-auto text-white" />
                       <span>Research Paper</span>
+                      <ArrowUpRight size={14} />
                     </a>
 
                     <a
