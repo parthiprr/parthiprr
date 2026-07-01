@@ -105,7 +105,7 @@ export const About: React.FC = () => {
           >
             <motion.div variants={itemVariants} className="space-y-4">
               <p className="text-brand-text-muted leading-relaxed font-sans text-sm sm:text-base">
-                I am an MCA student at Amrita Vishwa Vidyapeetham and an aspiring Software Engineer specializing in Artificial Intelligence, Large Language Models (LLMs), NLP, and scalable backend architectures. Leveraging a robust technology stack including Python, FastAPI, Angular, Node.js, PostgreSQL, and MongoDB, I build intelligent full-stack systems and integrate advanced AI capabilities. My experience spans AI research, fine-tuning LLMs, designing high-performance REST APIs, and developing autonomous AI agent workflows. Driven by a passion for backend engineering and system design, I focus on transforming complex business workflows into robust, production-grade software solutions suitable for modern enterprise environments.
+                I am an MCA graduate from Amrita Vishwa Vidyapeetham and an aspiring Software Engineer specializing in Artificial Intelligence, Large Language Models (LLMs), NLP, and scalable backend architectures. Leveraging a robust technology stack including Python, FastAPI, Angular, Node.js, PostgreSQL, and MongoDB, I build intelligent full-stack systems and integrate advanced AI capabilities. My experience spans AI research, fine-tuning LLMs, designing high-performance REST APIs, and developing autonomous AI agent workflows. Driven by a passion for backend engineering and system design, I focus on transforming complex business workflows into robust, production-grade software solutions suitable for modern enterprise environments.
               </p>
             </motion.div>
 

@@ -12,7 +12,7 @@ import { Contact } from './sections/Contact';
 const sectionMetadata = {
   home: {
     title: 'Parthip R R | Software Engineer, AI & Full Stack Developer | Portfolio',
-    description: 'Explore the portfolio of Parthip R R - MCA student specializing in Full Stack Development, AI/LLM Integration, and intelligent backend systems.',
+    description: 'Explore the portfolio of Parthip R R - MCA graduate specializing in Full Stack Development, AI/LLM Integration, and intelligent backend systems.',
   },
   about: {
     title: 'About Parthip R R | Software Engineer & AI Enthusiast',
