@@ -111,7 +111,7 @@ export const Contact: React.FC = () => {
           <h2 id="contact-heading" className="text-xs font-bold tracking-[0.35em] uppercase text-brand-text-muted">
             C O N T A C T
           </h2>
-          <div className="h-[1px] w-12 bg-brand-accent-gold/30 mx-auto mt-3" />
+          <div className="h-px w-12 accent-gradient mx-auto mt-3" />
         </div>
 
         <div className="max-w-xl mx-auto text-center space-y-6">
@@ -140,7 +140,7 @@ export const Contact: React.FC = () => {
           </div>
 
           {/* Form Container */}
-          <div className="bg-white border border-brand-border rounded-3xl p-6 sm:p-8 shadow-md relative">
+          <div className="bg-brand-surface border border-brand-border rounded-3xl p-6 sm:p-8 shadow-md relative">
             <form
               action="https://api.web3forms.com/submit"
               method="POST"
@@ -163,7 +163,7 @@ export const Contact: React.FC = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full bg-gray-50 hover:bg-gray-100/30 border border-brand-border/60 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-text-dark placeholder-brand-text-muted/40 transition-all font-semibold"
+                    className="w-full bg-brand-bg hover:bg-brand-stroke/30 border border-brand-border/60 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-text-dark placeholder-brand-text-muted/40 transition-all font-semibold"
                     placeholder="Your name"
                   />
                   {errors.name && (
@@ -184,7 +184,7 @@ export const Contact: React.FC = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full bg-gray-50 hover:bg-gray-100/30 border border-brand-border/60 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-text-dark placeholder-brand-text-muted/40 transition-all font-semibold"
+                    className="w-full bg-brand-bg hover:bg-brand-stroke/30 border border-brand-border/60 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-text-dark placeholder-brand-text-muted/40 transition-all font-semibold"
                     placeholder="email@example.com"
                   />
                   {errors.email && (
@@ -206,7 +206,7 @@ export const Contact: React.FC = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full bg-gray-50 hover:bg-gray-100/30 border border-brand-border/60 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-text-dark placeholder-brand-text-muted/40 transition-all font-semibold"
+                  className="w-full bg-brand-bg hover:bg-brand-stroke/30 border border-brand-border/60 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-text-dark placeholder-brand-text-muted/40 transition-all font-semibold"
                   placeholder="Subject"
                 />
                 {errors.subject && (
@@ -227,7 +227,7 @@ export const Contact: React.FC = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full bg-gray-50 hover:bg-gray-100/30 border border-brand-border/60 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-text-dark placeholder-brand-text-muted/40 transition-all font-semibold resize-none"
+                  className="w-full bg-brand-bg hover:bg-brand-stroke/30 border border-brand-border/60 rounded-xl px-4 py-3 text-xs sm:text-sm text-brand-text-dark placeholder-brand-text-muted/40 transition-all font-semibold resize-none"
                   placeholder="Your message details..."
                 />
                 {errors.message && (
@@ -264,7 +264,7 @@ export const Contact: React.FC = () => {
             <AnimatePresence>
               {submitStatus === 'success' && (
                 <motion.div
-                  className="absolute inset-0 bg-white/95 rounded-3xl flex flex-col justify-center items-center p-6 text-center space-y-4 z-10 border border-brand-border"
+                  className="absolute inset-0 bg-brand-surface/95 backdrop-blur-md rounded-3xl flex flex-col justify-center items-center p-6 text-center space-y-4 z-10 border border-brand-border"
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0 }}
@@ -278,7 +278,7 @@ export const Contact: React.FC = () => {
                   </div>
                   <button
                     onClick={() => setSubmitStatus('idle')}
-                    className="px-5 py-2 bg-gray-50 hover:bg-white border border-brand-border text-brand-text-dark text-[10px] font-bold uppercase tracking-wider rounded-xl cursor-pointer transition-all shadow-sm"
+                    className="px-5 py-2 bg-brand-bg hover:bg-brand-stroke/30 border border-brand-border text-brand-text-dark text-[10px] font-bold uppercase tracking-wider rounded-xl cursor-pointer transition-all shadow-sm"
                   >
                     Send Another
                   </button>
@@ -287,12 +287,12 @@ export const Contact: React.FC = () => {
               
               {submitStatus === 'error' && (
                 <motion.div
-                  className="absolute inset-0 bg-white/95 rounded-3xl flex flex-col justify-center items-center p-6 text-center space-y-4 z-10 border border-brand-border"
+                  className="absolute inset-0 bg-brand-surface/95 backdrop-blur-md rounded-3xl flex flex-col justify-center items-center p-6 text-center space-y-4 z-10 border border-brand-border"
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0 }}
                 >
-                  <AlertCircle className="text-red-500 w-14 h-14" />
+                  <AlertCircle className="text-red-400 w-14 h-14" />
                   <div className="space-y-1">
                     <h4 className="text-lg font-display font-extrabold text-brand-text-dark">Submission Failed</h4>
                     <p className="text-xs text-brand-text-muted max-w-xs leading-relaxed font-sans">
@@ -301,7 +301,7 @@ export const Contact: React.FC = () => {
                   </div>
                   <button
                     onClick={() => setSubmitStatus('idle')}
-                    className="px-5 py-2 bg-gray-50 hover:bg-white border border-brand-border text-brand-text-dark text-[10px] font-bold uppercase tracking-wider rounded-xl cursor-pointer transition-all shadow-sm"
+                    className="px-5 py-2 bg-brand-bg hover:bg-brand-stroke/30 border border-brand-border text-brand-text-dark text-[10px] font-bold uppercase tracking-wider rounded-xl cursor-pointer transition-all shadow-sm"
                   >
                     Try Again
                   </button>
