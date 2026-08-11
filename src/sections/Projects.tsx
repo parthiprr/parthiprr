@@ -62,6 +62,17 @@ const publication = {
 
 const freelanceProjects = [
   {
+    slug: 'the-glam-up-studio',
+    title: 'The Glam Up Studio',
+    category: 'Luxury Beauty Salon',
+    description:
+      'A premium, fully responsive luxury beauty salon website featuring modern aesthetics, interactive service sections, high-end gallery showcasing, and booking integration.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    image: '/images/beautuparloru.png',
+    imageAlt: 'The Glam Up Studio — Premium Beauty Salon website showcasing luxury styling and salon booking',
+    liveUrl: 'https://beautyparlour-eta.vercel.app/',
+  },
+  {
     slug: 'togera',
     title: 'Togera',
     category: 'Travel Community Platform',
