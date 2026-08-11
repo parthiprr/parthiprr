@@ -62,6 +62,17 @@ const publication = {
 
 const freelanceProjects = [
   {
+    slug: 'royal-dent',
+    title: 'Royal Dent Dental Clinic',
+    category: 'Premium Dental Care & Clinic',
+    description:
+      'A premium website for an advanced dental clinic in Kochi, India, featuring detailed treatment showcases, doctor profiles, sterile facility details, and interactive appointment scheduling.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    image: '/images/dental-screenshot.png',
+    imageAlt: 'Royal Dent Dental Clinic website homepage showing premium dental care solutions and booking details',
+    liveUrl: 'https://dental-clinic-three-ruddy.vercel.app/',
+  },
+  {
     slug: 'the-glam-up-studio',
     title: 'The Glam Up Studio',
     category: 'Luxury Beauty Salon',

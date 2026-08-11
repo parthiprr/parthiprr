@@ -10,8 +10,16 @@ const pageTransition = {
   exit: { opacity: 0, transition: { duration: 0.3 } },
 };
 
-/* ── Featured Work (3 cards) ── */
+/* ── Featured Work (4 cards) ── */
 const featuredWork = [
+  {
+    slug: 'royal-dent',
+    title: 'Royal Dent Dental Clinic',
+    description: 'A premium website for an advanced dental clinic featuring interactive bookings, treatment listings, and doctor profiles.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    image: '/images/dental-screenshot.png',
+    liveUrl: 'https://dental-clinic-three-ruddy.vercel.app/',
+  },
   {
     slug: 'the-glam-up-studio',
     title: 'The Glam Up Studio',
@@ -72,7 +80,7 @@ const Home: React.FC = () => (
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {featuredWork.map((item, idx) => (
             <motion.article
               key={item.slug}
