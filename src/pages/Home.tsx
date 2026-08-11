@@ -13,12 +13,12 @@ const pageTransition = {
 /* ── Featured Work (3 cards) ── */
 const featuredWork = [
   {
-    slug: 'creative-portfolio',
-    title: 'Creative Developer Portfolio',
-    description: 'A premium, dark-themed, cinematic creative developer portfolio featuring video preloading and dynamic accent themes.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS'],
-    image: '/images/creative-web.png',
-    liveUrl: 'https://parthip-creative-ajq1dhv5w-parthiprrs-projects.vercel.app/',
+    slug: 'the-glam-up-studio',
+    title: 'The Glam Up Studio',
+    description: 'A premium, fully responsive luxury beauty salon website featuring modern aesthetics, interactive services, and booking integration.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    image: '/images/beautuparloru.png',
+    liveUrl: 'https://beautyparlour-eta.vercel.app/',
   },
   {
     slug: 'togera',
