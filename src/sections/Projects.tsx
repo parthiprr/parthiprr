@@ -70,7 +70,7 @@ const freelanceProjects = [
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     image: '/images/dental-screenshot.png',
     imageAlt: 'Royal Dent Dental Clinic website homepage showing premium dental care solutions and booking details',
-    liveUrl: 'https://royaldent.freehosting.dev/',
+    liveUrl: 'https://royaldent.freehosting.dev/index.html?i=1',
   },
   {
     slug: 'the-glam-up-studio',
