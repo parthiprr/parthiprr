@@ -18,7 +18,7 @@ const featuredWork = [
     description: 'A premium website for an advanced dental clinic featuring interactive bookings, treatment listings, and doctor profiles.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     image: '/images/dental-screenshot.png',
-    liveUrl: 'https://dental-clinic-three-ruddy.vercel.app/',
+    liveUrl: 'https://royaldent.freehosting.dev/',
   },
   {
     slug: 'the-glam-up-studio',
